@@ -6,9 +6,11 @@ public class SpaundCube : MonoBehaviour
 {
    public GameObject SpawnPoint;
    public GameObject SpawnObject;
+   public float Scale;
    public void AddCube()
    {
-      Instantiate(SpawnObject, SpawnPoint.transform.position,Quaternion.identity);
+     GameObject cube = Instantiate(SpawnObject, SpawnPoint.transform.position,Quaternion.identity);
+        cube.transform.localScale = cube.transform.localScale * Scale;
    }
 
 }
