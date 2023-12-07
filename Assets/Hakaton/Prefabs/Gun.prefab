@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab39d391e0510604abc9f2ecd26b6eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Snowball: {fileID: 3989505858891379344, guid: 7ce6e5dbf1910424c824dffa03eb4443,
+  Snowball: {fileID: 2961637229846212086, guid: 8ca2f93b95abe9d4e990c8c2b9110999,
     type: 3}
   SnowPoint: {fileID: 5171272034577211879}
   IsShoot: 0
