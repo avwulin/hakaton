@@ -17,7 +17,7 @@ public class DamageSystem : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Snowball"))
+        if (collision.gameObject.CompareTag("Bullet"))
         {
             Health -= Damage;
             float healthNormalized = (float)Health / MaxHealth;
