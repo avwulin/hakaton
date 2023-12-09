@@ -5,9 +5,21 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/UI/Scenes/Main.unity
+    guid: 00e386ec0df0d6743b8030456d221771
+  - enabled: 0
+    path: Assets/UI/Scenes/UI test.unity
+    guid: 2ab2d43233cd9194b980f12f1f070111
+  - enabled: 1
+    path: Assets/UI/Scenes/UIPolina/Menu_.unity
+    guid: 39617549d3412fa40b01d22f575952a6
+  - enabled: 1
+    path: Assets/UI/Scenes/UIPolina/Scene1.unity
+    guid: feebd7f80e87f1446b9c945f06028dd6
   m_configObjects:
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f271f0cec7667bc428a9cf8047f76b3f,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 655d1dc4d732995418119e5c8ec7d854,
       type: 2}
