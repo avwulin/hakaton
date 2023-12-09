@@ -228,6 +228,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &255715136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5171272034577211879, guid: 9e9552dce9ffdd64ab85496502f7657d,
+    type: 3}
+  m_PrefabInstance: {fileID: 771034047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &290150762
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,10 +504,56 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 466077651458956488, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1881998923}
+    - target: {fileID: 466077651458956488, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1881998923}
+    - target: {fileID: 466077651458956488, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 466077651458956488, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 466077651458956488, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: reload, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 466077651458956488, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: reload, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 849004342861979372, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: SnowPoint
+      value: 
+      objectReference: {fileID: 255715136}
+    - target: {fileID: 849004342861979372, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: SnowballPrefab
+      value: 
+      objectReference: {fileID: 2961637229846212086, guid: 8ca2f93b95abe9d4e990c8c2b9110999,
+        type: 3}
     - target: {fileID: 6335686409813505840, guid: 9e9552dce9ffdd64ab85496502f7657d,
         type: 3}
       propertyPath: m_Name
       value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335686409813505840, guid: 9e9552dce9ffdd64ab85496502f7657d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snowball
       objectReference: {fileID: 0}
     - target: {fileID: 9114454444969713652, guid: 9e9552dce9ffdd64ab85496502f7657d,
         type: 3}
@@ -1251,6 +1303,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881998923 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 849004342861979372, guid: 9e9552dce9ffdd64ab85496502f7657d,
+    type: 3}
+  m_PrefabInstance: {fileID: 771034047}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0335fd9dc39bce34a973b33796d9288f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1961036432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1637,7 @@ Transform:
   m_GameObject: {fileID: 2122564070}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.25, y: -1.33, z: 0}
+  m_LocalPosition: {x: -1.25, y: 0.16, z: 0}
   m_LocalScale: {x: 31.456001, y: 1.5728, z: 31.456001}
   m_ConstrainProportionsScale: 0
   m_Children: []

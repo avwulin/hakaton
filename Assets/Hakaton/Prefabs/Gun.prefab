@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 335116455186942417}
   - component: {fileID: 466077651458956488}
   - component: {fileID: 4385246959150064644}
+  - component: {fileID: 849004342861979372}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -383,7 +384,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6335686409813505840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab39d391e0510604abc9f2ecd26b6eb1, type: 3}
   m_Name: 
@@ -392,6 +393,23 @@ MonoBehaviour:
     type: 3}
   SnowPoint: {fileID: 5171272034577211879}
   IsShoot: 0
+--- !u!114 &849004342861979372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335686409813505840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0335fd9dc39bce34a973b33796d9288f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnowballPrefab: {fileID: 3989505858891379344, guid: 7ce6e5dbf1910424c824dffa03eb4443,
+    type: 3}
+  SnowPoint: {fileID: 0}
+  IsShoot: 0
+  ammoText: {fileID: 0}
 --- !u!1 &6755902907091656086
 GameObject:
   m_ObjectHideFlags: 0
