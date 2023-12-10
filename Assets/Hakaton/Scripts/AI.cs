@@ -10,12 +10,15 @@ public class AI : MonoBehaviour
 
 
 
-   
 
 
-    
-    public void SetTarget(Vector3 target)
+    public void Update()
     {
-    Agent.destination = target;
+        Agent.destination = TargetPoint.transform.position;
+    }
+
+    public void SetTarget(GameObject target)
+    {
+    TargetPoint = target;
 }
 }

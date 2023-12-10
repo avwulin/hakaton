@@ -22,7 +22,7 @@ public class AIspawner : MonoBehaviour
         if (_timer > Delay)
         {
             GameObject npc = Instantiate(AIPrefab, transform.position, transform.rotation);
-            npc.GetComponent<AI>().SetTarget(TargerPoint.transform.position);
+            npc.GetComponent<AI>().SetTarget(TargerPoint);
             _timer = 0f;
         }
     }
