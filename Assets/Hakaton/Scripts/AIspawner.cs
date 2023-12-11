@@ -8,7 +8,7 @@ public class AIspawner : MonoBehaviour
     public GameObject TargerPoint;
     public float Delay;
     private float _timer;
-
+    public Score s;
     
     void Start()
     {

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5442441112565354863}
   - component: {fileID: 1623142577200457527}
   - component: {fileID: 8581265410197925549}
+  - component: {fileID: -1981183879384347890}
   m_Layer: 0
   m_Name: Snowball
   m_TagString: Snowball
@@ -299,3 +300,16 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-1981183879384347890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989505858891379344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf8678d81876d41489b36af6d6a93dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreText: {fileID: 0}
