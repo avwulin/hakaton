@@ -8,7 +8,7 @@ public class DamageSystem : MonoBehaviour
     public int MaxHealth;
     public int Health;
     public int Damage;
-
+    public Score s;
     private void Start()
     {
         Health = MaxHealth;

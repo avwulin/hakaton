@@ -8,7 +8,7 @@ public class AIspawner : MonoBehaviour
     public GameObject TargerPoint;
     public float Delay;
     private float _timer;
-
+    public Score s;
     
     void Start()
     {
@@ -21,8 +21,9 @@ public class AIspawner : MonoBehaviour
         _timer += Time.deltaTime;
         if (_timer > Delay)
         {
-            GameObject npc = Instantiate(AIPrefab, transform.position, transform.rotation);
-            npc.GetComponent<AI>().SetTarget(TargerPoint.transform.position);
+            GameObject npc = Instantiate(AIPrefab, transform.position, transform.rotation); //Создание снеговика и запихивание его в переменную npc
+            npc.GetComponent<AI>().SetTarget(TargerPoint.transform.position); //Берем компонент AI устанавливаем его позицию 
+            npc.GetComponent<DamageSystem>().s=s;
             _timer = 0f;
         }
     }
