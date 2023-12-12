@@ -36,7 +36,11 @@ public class DamageSystem : MonoBehaviour
 
             if (Health <= 0)
             {   
-                score.ScoreUI=Score;
+                if (score)
+                {
+                    score.ScoreUI = Score;
+                }
+             
                 // Уничтожение объекта и добавление очков
                 Destroy(gameObject);
             }

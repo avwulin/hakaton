@@ -10,12 +10,12 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
-        if (livesText == null)
+        if (livesText != null)
         {
-            Debug.LogError("Assign Text object to Lives Text in the Inspector!");
+            UpdateUI();
         }
 
-        UpdateUI();
+        
     }
     private void OnTriggerEnter(Collider collision)
     {
