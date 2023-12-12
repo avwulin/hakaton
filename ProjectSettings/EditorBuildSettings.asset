@@ -15,14 +15,14 @@ EditorBuildSettings:
     path: Assets/UI/Scenes/Main.unity
     guid: 00e386ec0df0d6743b8030456d221771
   - enabled: 1
-    path: Assets/Hakaton/UIPolina/Menu_.unity
+    path: Assets/Hakaton/Scenes/UIPolina/Menu_.unity
     guid: 39617549d3412fa40b01d22f575952a6
   - enabled: 0
     path: Assets/Hakaton/Scenes/Scene1.unity
     guid: feebd7f80e87f1446b9c945f06028dd6
   - enabled: 1
-    path: Assets/Hakaton/Scenes/Aitest.unity
+    path: Assets/Hakaton/Scenes/UIPolina/Aitest.unity
     guid: 83d37c2257852374b881abdec47df1b8
   m_configObjects:
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 51e55c009ec9ed74183c95de014479b4,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 655d1dc4d732995418119e5c8ec7d854,
       type: 2}

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
-    private int _score;
+    public int _score;
     public Text ScoreText;
 
     public int ScoreUI
@@ -20,7 +20,7 @@ public class Score : MonoBehaviour
     {
         if (ScoreText != null)
         {
-            ScoreText.text = "Score: " + _score.ToString();
+            ScoreText.text = "" + _score.ToString();
         }
     }
 

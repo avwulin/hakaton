@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         
         if (livesText != null)
         {
-            livesText.text = "Жизни: " + lives.ToString();
+            livesText.text = "" + lives.ToString();
         }
     }
 
