@@ -1,10 +1,10 @@
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     private int _score;
-    public TextMeshProUGUI ScoreText;
+    public Text ScoreText;
 
     public int ScoreUI
     {
@@ -12,9 +12,17 @@ public class Score : MonoBehaviour
 
         set
         {
-            _score = value;
-            ScoreText.text = "" + _score;
+            _score += value;
+            UpdateScoreUI();
         }
     }
+    private void UpdateScoreUI()
+    {
+        if (ScoreText != null)
+        {
+            ScoreText.text = "Score: " + _score.ToString();
+        }
+    }
+
 }
 

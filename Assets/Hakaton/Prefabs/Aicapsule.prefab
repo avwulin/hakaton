@@ -61,9 +61,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556a11ca4546c86439b228d389de6a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 0
+  MaxHealth: 13
   Health: 0
-  Damage: 0
+  Damage: 3
+  Score: 10
+  score: {fileID: 0}
 --- !u!54 &3754183856808271364
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -237,3 +239,5 @@ MonoBehaviour:
   MaxHealth: 15
   Health: 0
   Damage: 3
+  Score: 0
+  score: {fileID: 0}

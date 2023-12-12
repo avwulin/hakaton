@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public int lives = 5;
+    public int lives = 100;
     public Text livesText;
     
     void Start()
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         
         if (livesText != null)
         {
-            livesText.text = "Lives: " + lives.ToString();
+            livesText.text = "Жизни: " + lives.ToString();
         }
     }
 

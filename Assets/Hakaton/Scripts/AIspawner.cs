@@ -8,7 +8,7 @@ public class AIspawner : MonoBehaviour
     public GameObject TargerPoint;
     public float Delay;
     private float _timer;
-    public Score s;
+    public Score score;
     
     void Start()
     {
@@ -23,7 +23,9 @@ public class AIspawner : MonoBehaviour
         {
             GameObject npc = Instantiate(AIPrefab, transform.position, transform.rotation);
             npc.GetComponent<AI>().SetTarget(TargerPoint);
+            npc.GetComponent<DamageSystem>().score=score;
             _timer = 0f;
+
         }
     }
 }

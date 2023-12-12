@@ -9,7 +9,7 @@ public class reload : MonoBehaviour
     public GameObject SnowPoint;
     public bool IsShoot;
 
-    private int ammoCount = 0;
+    public int ammoCount = 25;
     private const int maxAmmo = 50;
     private const int ammoPerSnowball = 5;
 
@@ -51,19 +51,13 @@ public class reload : MonoBehaviour
         if (ammoToReload > 0)
         {
             ammoCount += ammoToReload;
-            Debug.Log("Оружие перезаряжено! Патроны: " + ammoCount);
             UpdateAmmoText();
-        }
-        else if(remainingAmmo > maxAmmo)
-        {
-            Debug.Log("Оружие полностью заряжено. Нельзя зарядить больше " + maxAmmo + " патронов.");
         }
     }
 
     void ConsumeAmmo()
     {
         ammoCount--;
-        Debug.Log("Патрон использован. Осталось патронов: " + ammoCount);
         UpdateAmmoText();
     }
 
@@ -74,7 +68,7 @@ public class reload : MonoBehaviour
 
     void UpdateAmmoText()
     {
-        ammoText.text = "Снаряды: " + ammoCount;
+        ammoText.text = "РЎРЅР°СЂСЏРґС‹: " + ammoCount;
     }
 
     public void Shoot()
