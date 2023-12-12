@@ -14,7 +14,7 @@ public class reload : MonoBehaviour
     private const int ammoPerSnowball = 5;
 
     public Text ammoText;
-
+    public
     
 
     void Update()
@@ -68,7 +68,7 @@ public class reload : MonoBehaviour
 
     void UpdateAmmoText()
     {
-        ammoText.text = "Снаряды: " + ammoCount;
+        ammoText.text = "" + ammoCount;
     }
 
     public void Shoot()
