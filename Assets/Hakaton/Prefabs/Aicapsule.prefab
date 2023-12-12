@@ -64,8 +64,8 @@ MonoBehaviour:
   MaxHealth: 13
   Health: 0
   Damage: 3
-  Score: 0
-  scoreText: {fileID: 0}
+  Score: 10
+  score: {fileID: 0}
 --- !u!54 &3754183856808271364
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -240,4 +240,4 @@ MonoBehaviour:
   Health: 0
   Damage: 3
   Score: 0
-  scoreText: {fileID: 0}
+  score: {fileID: 0}

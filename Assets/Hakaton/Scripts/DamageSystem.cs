@@ -10,23 +10,15 @@ public class DamageSystem : MonoBehaviour
     public int Damage;
     public int Score; // Новая переменная для счетчика очков
 
-    public Text scoreText; // Ссылка на текстовое поле для отображения счета
-
+    
+    public Score score;
     private void Start()
     {
         Health = MaxHealth;
-        Score = 0; // Инициализация счетчика очков
-        UpdateScoreUI(); // Обновление UI счетчика очков
+       
     }
 
-    private void UpdateScoreUI()
-    {
-        if (scoreText != null)
-        {
-            scoreText.text = "Score: " + Score.ToString();
-        }
-    }
-
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))
@@ -43,11 +35,10 @@ public class DamageSystem : MonoBehaviour
             Destroy(collision.gameObject);
 
             if (Health <= 0)
-            {
+            {   
+                score.ScoreUI=Score;
                 // Уничтожение объекта и добавление очков
                 Destroy(gameObject);
-                Score += 100;
-                UpdateScoreUI();
             }
         }
     }
