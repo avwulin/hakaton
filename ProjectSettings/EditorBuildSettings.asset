@@ -24,5 +24,5 @@ EditorBuildSettings:
     path: Assets/Hakaton/Scenes/UIPolina/Aitest.unity
     guid: 83d37c2257852374b881abdec47df1b8
   m_configObjects:
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 655d1dc4d732995418119e5c8ec7d854,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 51e55c009ec9ed74183c95de014479b4,
       type: 2}
